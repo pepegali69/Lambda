@@ -1,0 +1,4 @@
+com\oracle\consultas\dao\DoctorDAOImpl.class
+com\oracle\consultas\dao\Dao.class
+com\oracle\consultas\model\Doctor.class
+com\oracle\consultas\dao\DoctorDAO.class
