@@ -5,19 +5,26 @@
  */
 package com.netec.clase5;
 
-import java.io.Serializable;
-
 /**
  *
  * @author Java
  */
-public class Gato implements Serializable{
+public class Persona {
+
+    private String id;
     private String nombre;
-        private String raza;
-        private static final long serialVersionUID = 1L;
-    @Override
-    public String toString() {
-        return "Gato{" + "nombre=" + nombre + ", raza=" + raza + '}';
+
+    public Persona(String id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -28,13 +35,11 @@ public class Gato implements Serializable{
         this.nombre = nombre;
     }
 
-    public String getRaza() {
-        return raza;
+    @Override
+    public String toString() {
+        return "Persona{" + "id=" + id + ", nombre=" + nombre + '}';
     }
-
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
-
+    
+    
     
 }
